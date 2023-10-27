@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <title>Voice Recorder App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href= "./css/loader.css">
+</head>
+<body class="w-screen h-screen">
+    
+    <!--NavBar-->
+    
+    <nav class="bg-gray-100 dark:bg-gray-800">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+        <a class="flex items-center select-none">
+            <img src="./assets/record.ico" class="h-8 mr-3" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Voice Recorder</span>
+        </a>
+
+
+        </div>
+    </nav>
+  
+    <!--Content-->
+    <section class="container flex flex-row items-center justify-center w-full min-w-full min-h-screen py-8 m-auto bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-sm border border-gray-500 rounded-lg shadow h-2/4 bg-slate-50 dark:bg-slate-950 dark:border-gray-800 p-7 min-w-[400px]">
+            <div class="flex flex-col gap-3">
+                <div class="relative mb-3">
+                    <input
+                        type="text" 
+                        id="voice_name"
+                      class="bg-purple-100 dark:bg-neutral-700 peer m-0 block h-[60px] w-full rounded border border-solid border-2 border-neutral-300 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-indigo-700 focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:border-indigo-700 dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-primary dark:peer-focus: [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                      id="floatingInput"
+                      placeholder="test" />
+                    <label
+                      for="floatingInput"
+                      class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-indigo-700 peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                      >File name</label
+                    >
+                    <select name="input_devices" id="input_devices" class="h-[60px] mt-2 bg-purple-100 border-solid border-2 border-neutral-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-700 focus:border-indigo-700 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></select>
+                  </div>
+           
+                <button id="record_btn" status="inactive" class="w-[80px] h-[80px] bg-red-500 rounded-full hover:bg-red-300 mx-auto">
+                    <img src="./assets/mic.svg" alt="" srcset="" class="max-h-[50px] max-w-[50px] mx-auto stroke-sky-300">
+                </button>
+                <div id="sound_waves" class="flex flex-row items-center justify-center w-full loader" style="display: none;">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <button class="bg-green-400 border font-bold border-gray-900 rounded hover:bg-green-500 min-h-[40px] text-neutral-500" id="save_btn">
+                    Save
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-100 dark:bg-gray-800">
+        <p class="text-center text-gray-800 dark:text-gray-200">Copyright © 2023 Maher_CsHub</p>
+      </footer>
+    <script src="./js/script.js"></script>
+
+    <script type="text/javascript" src="./js/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+</body>
+
+</html>
+
+
+

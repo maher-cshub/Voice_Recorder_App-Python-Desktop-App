@@ -1,0 +1,5 @@
+templates/node_modules
+templates/src
+templates/tailwind.config.js
+venv
+Voice Recoder
